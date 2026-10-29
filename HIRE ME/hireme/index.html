@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ian Miguel | Personal Portfolio</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg fixed-top modern-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                <span class="brand-dot"></span>
+                Ian Miguel
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#potential">Goals</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item ms-lg-3">
+
+                        <button
+                            id="themeButton"
+                            class="theme-button"
+                            aria-label="Toggle dark mode"
+                        >
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100 g-5">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-content">
+
+                        <span class="small-label">
+                            <i class="bi bi-circle-fill"></i>
+                            IT STUDENT
+                        </span>
+
+                        <h1>
+                            Hello, I'm
+                            <span class="gradient-text">
+                                Ian Miguel.
+                            </span>
+                        </h1>
+
+                        <h2>
+                            I am a
+                            <span id="typingText"></span>
+                        </h2>
+
+                        <p class="hero-description">
+                            I'm an Information Technology student who enjoys
+                            exploring technology, creating websites, learning
+                            new skills, and turning ideas into digital experiences.
+                        </p>
+
+                        <div class="hero-buttons d-flex flex-wrap gap-3">
+
+                            <a
+                                href="#about"
+                                class="btn btn-primary modern-btn"
+                            >
+                                Explore My Page
+                                <i class="bi bi-arrow-down"></i>
+                            </a>
+
+                            <button
+                                id="introduceButton"
+                                class="btn btn-outline-primary modern-btn"
+                            >
+                                <i class="bi bi-person"></i>
+                                Introduce Me
+                            </button>
+
+                        </div>
+
+                        <div
+                            id="introResult"
+                            class="intro-result"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROFILE -->
+
+                <div class="col-lg-5 text-center">
+
+                    <div class="profile-container">
+
+                        <div class="profile-glow"></div>
+
+                        <img
+                            src="ian.jpg"
+                            alt="Profile picture of Ian Miguel Estrella"
+                            class="profile-image"
+                        >
+
+                        <div class="floating-card card-one">
+                            <i class="bi bi-code-slash"></i>
+                            <span>Web Dev</span>
+                        </div>
+
+                        <div class="floating-card card-two">
+                            <i class="bi bi-cpu"></i>
+                            <span>IT Student</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+
+    <section class="stats-section">
+
+        <div class="container">
+
+            <div class="row g-4 text-center">
+
+                <div class="col-6 col-md-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-mortarboard"></i>
+
+                        <h3>IT</h3>
+
+                        <p>Student</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-code-square"></i>
+
+                        <h3>3+</h3>
+
+                        <p>Web Skills</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-lightbulb"></i>
+
+                        <h3>∞</h3>
+
+                        <p>Ideas</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+
+                    <div class="stat-card">
+
+                        <i class="bi bi-controller"></i>
+
+                        <h3>24/7</h3>
+
+                        <p>Learning</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="modern-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>GET TO KNOW ME</span>
+                <h2>About Me</h2>
+                <p>A little information about my background, interests, and goals.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-lg-7">
+                    <div class="modern-card about-card">
+                        <div class="icon-box">
+                            <i class="bi bi-person"></i>
+                        </div>
+
+                        <h3>Who am I?</h3>
+                        <p>
+                            My name is <strong>Ian Miguel Estrella</strong>, and I am a Bachelor of Science in
+                            Information Technology student at <strong>Batangas State University – The National
+                            Engineering University, Lipa Campus</strong>. I am motivated to learn how technology
+                            can solve problems, support people, and make everyday tasks more efficient.
+                        </p>
+                        <p>
+                            Throughout my academic journey, I have been developing my knowledge of web development,
+                            programming, database management, networking, and systems analysis. I am still learning,
+                            and I see every class activity and project as an opportunity to improve my skills through
+                            practice, feedback, and teamwork.
+                        </p>
+                        <p>
+                            I also value student involvement and collaboration. Through participation in campus
+                            organizations and media-related activities, I have had opportunities to contribute to
+                            student events, work with other students, and develop my communication, creativity, and
+                            sense of responsibility.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="modern-card personal-card">
+                        <h3>Education & Quick Facts</h3>
+
+                        <div class="fact-item">
+                            <i class="bi bi-person-badge"></i>
+                            <div>
+                                <small>Name</small>
+                                <strong>Ian Miguel Estrella</strong>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <i class="bi bi-mortarboard"></i>
+                            <div>
+                                <small>Program</small>
+                                <strong>Bachelor of Science in Information Technology</strong>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <i class="bi bi-building"></i>
+                            <div>
+                                <small>University</small>
+                                <strong>Batangas State University – Lipa Campus</strong>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <i class="bi bi-laptop"></i>
+                            <div>
+                                <small>Areas of Interest</small>
+                                <strong>Web Development, Networking & Systems</strong>
+                            </div>
+                        </div>
+
+                        <div class="fact-item">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <div>
+                                <small>Current Focus</small>
+                                <strong>Learning, practicing, and building projects</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="modern-section skills-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>WHAT I AM LEARNING</span>
+                <h2>Skills & Interests</h2>
+                <p>Skills I am developing through coursework, personal practice, and projects.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-filetype-html"></i></div>
+                        <h3>Web Development</h3>
+                        <p>I practice building responsive web pages using HTML, CSS, JavaScript, and Bootstrap.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>HTML / CSS</span><span>Learning</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-code-slash"></i></div>
+                        <h3>Programming</h3>
+                        <p>I continue to practice programming fundamentals and problem-solving with languages such as Python and Java.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>Programming Basics</span><span>Learning</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-database"></i></div>
+                        <h3>Database Management</h3>
+                        <p>I am learning how to organize data, work with databases, and connect data to information systems.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>Database Concepts</span><span>Learning</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-diagram-3"></i></div>
+                        <h3>Networking</h3>
+                        <p>I study IP addressing, network devices, configuration, troubleshooting, and basic network security.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>Networking Fundamentals</span><span>Learning</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-clipboard-data"></i></div>
+                        <h3>Systems Analysis</h3>
+                        <p>I am interested in understanding user needs, documenting requirements, and planning practical system solutions.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>Analysis & Documentation</span><span>Learning</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 65%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="bi bi-people"></i></div>
+                        <h3>Communication & Teamwork</h3>
+                        <p>Through group projects and student activities, I practice sharing ideas, coordinating tasks, and working responsibly with others.</p>
+                        <div class="skill-progress">
+                            <div class="progress-label"><span>Collaboration</span><span>Growing</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GOALS & POTENTIAL ================= -->
+
+    <section id="potential" class="modern-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+                <span>MY NEXT STEPS</span>
+                <h2>Goals & Potential</h2>
+                <p>I am building a strong foundation for my future in information technology.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <div class="icon-box"><i class="bi bi-lightbulb"></i></div>
+                        <h3>Build Useful Projects</h3>
+                        <p>My goal is to apply what I learn in class by creating practical projects, improving existing work, and learning from mistakes.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <div class="icon-box"><i class="bi bi-book"></i></div>
+                        <h3>Keep Learning</h3>
+                        <p>I want to strengthen my foundations in programming, databases, networking, and system development while exploring new technologies at a steady pace.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="modern-card">
+                        <div class="icon-box"><i class="bi bi-people"></i></div>
+                        <h3>Contribute & Collaborate</h3>
+                        <p>I hope to keep contributing to student activities, learn from my peers and mentors, and become a dependable teammate in future projects.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modern-card mt-4">
+                <h3>My Student Journey</h3>
+                <p>
+                    I am not presenting myself as an expert or an experienced IT professional yet. I am a student who is
+                    committed to learning, gaining hands-on experience, and improving step by step. I believe consistency,
+                    curiosity, teamwork, and a willingness to accept feedback will help me prepare for future opportunities
+                    in the IT industry.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTERACTIVE GREETING ================= -->
+
+    <section class="greeting-section">
+
+        <div class="container">
+
+            <div class="greeting-box">
+
+                <div class="row align-items-center g-4">
+
+                    <div class="col-lg-6">
+
+                        <span class="small-label">
+                            INTERACTIVE FEATURE
+                        </span>
+
+                        <h2>
+                            Let's make this personal.
+                        </h2>
+
+                        <p>
+                            Enter your name and I'll create a personalized
+                            greeting for you.
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="input-group">
+
+                            <label
+                                for="visitorName"
+                                class="visually-hidden"
+                            >
+                                Your Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="visitorName"
+                                class="form-control"
+                                placeholder="Enter your name"
+                            >
+
+                            <button
+                                id="greetingButton"
+                                class="btn btn-primary"
+                                type="button"
+                            >
+                                Say Hello
+                            </button>
+
+                        </div>
+
+                        <div
+                            id="greetingResult"
+                            class="greeting-result"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="modern-section contact-section">
+
+        <div class="container">
+
+            <div class="section-heading text-center">
+
+                <span>GET IN TOUCH</span>
+
+                <h2>Contact Me</h2>
+
+                <p>
+                    Have something to say? Send me a message.
+                </p>
+
+            </div>
+
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-8">
+
+                    <form id="contactForm" class="modern-form">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    class="form-control"
+                                    placeholder="Your name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="you@example.com"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <label for="message">
+                                    Message
+                                </label>
+
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Write your message..."
+                                    required
+                                ></textarea>
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary modern-btn"
+                                >
+                                    Send Message
+                                    <i class="bi bi-send"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <div id="formResult"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="modern-footer">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                <p class="mb-0">
+                    © 2026 Ian Miguel Estrella
+                </p>
+
+                <p class="mb-0">
+                    Built with HTML, CSS, JavaScript & Bootstrap
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top"
+    >
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+    <!-- Bootstrap JavaScript -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Custom JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
